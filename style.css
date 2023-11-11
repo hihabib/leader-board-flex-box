@@ -46,7 +46,7 @@ header {
     font-weight: 400;
     gap: 30px
 }
-.top-player {
+.top-player, .latest-course {
     background-color: white;
     width: var(--box-width);
     margin: 0 auto;
@@ -54,7 +54,7 @@ header {
     margin-top: 36px;
     border-radius: 5px;
 }
-.top-player h2 {
+.top-player h2, .latest-course h2 {
     margin: 0;
     color: var(--primary-color);
     font-size: 24px;
@@ -85,4 +85,102 @@ header {
 hr {
     border: 1px solid #d1d1d1;
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+.blog-img img {
+    width: 177px;
+    height: 117px;
+}
+.blog {
+    display: flex;
+    gap: 15px;
+    width: calc(50% - 15px)
+}
+h3 {
+    margin: 0;
+}
+.blog-details h3 a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    color: #000;
+}
+.blog-details .blog-author a {
+    font-size: 16px;
+    text-decoration: none;
+}
+.blog-author {
+    margin-bottom: 10px;
+}
+.blog-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.course-thumbnail img {
+    height: 100px;
+    width: 215px;
+    max-width: 100%;
+}
+.courses {
+    display: flex;
+    justify-content: space-between;
+}
+.course {
+    width: 230px;
+    padding: 14px 11px;
+    box-shadow: 0px 5.3482px 13.3558px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.course h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.course .author-name {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.course .author-name a {
+    text-decoration: none;
+    color: #ED6B4F
+}
+.rating {
+    font-size: 12px;
+}
+.rating .fill {
+    color: #FFC014
+}
+.rating .unfill {
+    color: #AEAEAE
+}
+.course-bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-duration {
+    background-color: #FFE4E8;
+    padding: 3px 6px;
+    border-radius: 20px;
+    color: #FF4A60;
+    font-size: 13px;
+}
+.course-duration {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+.latest-course h2 {
+    margin-bottom: 25px;
+}
+.latest-course {
+    margin-bottom: 40px;
 }
